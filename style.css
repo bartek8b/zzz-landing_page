@@ -46,8 +46,7 @@ body{
 .item1 >.hero-container {
     display: flex;
     justify-content: space-between;
-    margin-inline: 256px;
-    padding-block: 128px;
+    margin: 128px 256px;
 }
 .item1 >.hero-container > .hero-left {
     display:  flex;
@@ -119,7 +118,20 @@ body{
     margin-top: 8px;
 }
 .item3{
-    
+    display: flex;
+    background-color: #E5E7EB;
+}
+.item3 > div  {
+    margin: 128px 256px;
+    font-size: 36px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+.item3 > div > p {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
 }
 
 .item4{
