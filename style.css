@@ -7,10 +7,6 @@ body{
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
-
-body{
-    display: flex;
-}
 .body-item{
     border: 1px solid green;
 }
@@ -30,6 +26,7 @@ body{
     margin-left: 256px;
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: 900;
 }
 .item1 > .header > ul{
     list-style: none;
@@ -89,9 +86,28 @@ body{
         }
 }
 .item2{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.item2 > .gallery{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+.item2 > .gallery > .gallery-item{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.item2 > .gallery > .gallery-item > .picture{
+    border: 2px solid red;
+    height: 180px;
+    width: inherit;
+}
+.item2 > .gallery > .gallery-item > .picture-caption{
+    text-align: center;
+}
 .item3{
     
 }
